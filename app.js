@@ -23,7 +23,7 @@ function calculateProfitLoss(b,s,q){
     }
     else{
         showMessage("No pain, no gain!!! 😐."); 
-        message.style.backgroundColor = "#F5F3FF";
+        message.style.backgroundColor = "yellow";
     }
 };
 
