@@ -10,13 +10,13 @@ function showMessage(msg){
 
 function calculateProfitLoss(b,s,q){
     if(b>s){
-        const loss = b-s;
+        const loss = (b-s)*q;
         const lossP = (loss/b)*100;
         showMessage("The loss is ₨ "+loss+" and the loss% is "+lossP+" 😌.")
         message.style.backgroundColor = "red";
     }
     else if(b<s){
-        const profit = s-b;
+        const profit = (s-b)*q;
         const profitP = (profit/b)*100;
         showMessage("The profit is ₨ "+profit+" and the profit% is "+profitP+" 😊.");
         message.style.backgroundColor = "green";
