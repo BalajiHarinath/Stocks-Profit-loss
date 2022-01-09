@@ -4,9 +4,7 @@ const sellPrice = document.querySelector("#sell");
 const btn = document.querySelector("#btn-stocks");
 const message = document.querySelector("#output");
 
-const showMessage = msg => {
-    message.innerText = msg;
-}
+const showMessage = msg => message.innerText = msg;
 
 const calculateProfitLoss = (b,s,q) => {
     if(b>s){
