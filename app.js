@@ -4,11 +4,11 @@ const sellPrice = document.querySelector("#sell");
 const btn = document.querySelector("#btn-stocks");
 const message = document.querySelector("#output");
 
-function showMessage(msg){
+const showMessage = msg => {
     message.innerText = msg;
 }
 
-function calculateProfitLoss(b,s,q){
+const calculateProfitLoss = (b,s,q) => {
     if(b>s){
         const loss = (b-s)*q;
         const lossP = (loss/b)*100;
@@ -28,7 +28,7 @@ function calculateProfitLoss(b,s,q){
     }
 };
 
-function clickHandler(){
+const clickHandler = () => {
     const buyP = Number(buyPrice.value);
     const sellP = Number(sellPrice.value);
     const quant = Number(quantity.value); 
